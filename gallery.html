@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Gallery</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: Arial;
+      }
+
+      /* The grid: Four equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 25%;
+        padding: 10px;
+      }
+
+      /* Style the images inside the grid */
+      .column img {
+        opacity: 0.8;
+        cursor: pointer;
+      }
+
+      .column img:hover {
+        opacity: 1;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      /* The expanding image container */
+      .container {
+        position: relative;
+        display: none;
+      }
+
+      /* Expanding image text */
+      #imgtext {
+        position: absolute;
+        bottom: 15px;
+        left: 15px;
+        color: white;
+        text-shadow: 2px 2px black;
+        font-size: 20px;
+      }
+
+      /* Closable button inside the expanded image */
+      .closebtn {
+        position: absolute;
+        top: 10px;
+        right: 15px;
+        color: black;
+        background-color: white;
+        font-size: 35px;
+        cursor: pointer;
+      }
+    </style>
+    <!-- SCRIPTS -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      <img
+        src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2FClickbait_1.gif?v=1597525396043"
+        width="200 px"
+      />
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="activism.html">activism</a></li>
+        <li><a href="game.html">game</a></li>
+        <li><a href="quiz.html">quiz</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="calendar.html">calendar</a></li>
+        <li><a href="fundraising.html">fundraising</a></li>
+        <li><a href="pointredeem.html">points</a></li>
+      </ul>
+    </nav>
+
+    <div style="text-align:center">
+      <br />
+      <h2 id="title-text">
+        gallery
+      </h2>
+      <br />
+      <p>click to expand the images below:</p>
+    </div>
+
+    <!-- The four columns -->
+    <div class="row">
+      <div class="column">
+        <img
+          src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2Fpeaceful%20protest.jpg?v=1597509982410"
+          alt="Denver Police hit peaceful protestors and observers with tear gas - police brutality?"
+          style="width:100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2Fclimate%20strike.jpg?v=1597511004878"
+          alt="stop saying 'it doesn't affect me' - there is no planet b"
+          style="width:100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2Fwomen's%20protest.jpg?v=1597510597122"
+          alt="women = men"
+          style="width:100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2Fblm.jpg?v=1597510811891"
+          alt="Black Lives Matter - 'matter' is the minimum"
+          style="width:100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+    </div>
+    <div class="row">
+      <div class="column">
+        <img
+          src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2FScreenshot_20200815_181945.jpg?v=1597512766011"
+          alt="ignorance is not bliss - it's a choice to be ignorant"
+          style="width:100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2FScreenshot_20200815_181934.jpg?v=1597512769922"
+          alt="toxic masculinity - celebrate masculinity in all its forms"
+          style="width:100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2FScreenshot_20200815_184057.jpg?v=1597513283929"
+          alt="we're all people"
+          style="width:100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+      <div class="column">
+        <img
+          src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2Ff7bd50d3567ca88b0706dcd110898f20.jpg?v=1597516043658"
+          alt="provide a voice for the voiceless, animal lives matter too"
+          style="width:100%"
+          onclick="myFunction(this);"
+        />
+      </div>
+    </div>
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" class="closebtn"
+        >&times;</span
+      >
+      <img id="expandedImg" style="width:100%" />
+      <div id="imgtext"></div>
+    </div>
+    <button class="pointsbutton" onclick="addPoints()">get points!</button>
+    <br />
+    <br />
+    <br />
+    <p id="points-gallery"></p>
+    <script>
+      function myFunction(imgs) {
+        var expandImg = document.getElementById("expandedImg");
+        var imgText = document.getElementById("imgtext");
+        expandImg.src = imgs.src;
+        imgText.innerHTML = imgs.alt;
+        expandImg.parentElement.style.display = "block";
+      }
+
+      //POINTS BUTTON
+      var points = 0;
+
+      function addPoints() {
+        points++;
+        document.getElementById("points-gallery").innerHTML = points;
+        sessionStorage.setItem("pointsGallery", points);
+      }
+    </script>
+  </body>
+</html>

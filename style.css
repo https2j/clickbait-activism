@@ -1,0 +1,275 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #e7eff6;
+  font-family: "Montserrat", sans-serif;
+  color: #63ace5;
+  text-align: center;
+}
+
+h1 {
+  background-color: #2a4d69;
+}
+h2 {
+  font-weight: bold;
+}
+#title-text {
+  font-weight: bold;
+  color: rgba(0, 50, 100, 0.6);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.3em;
+}
+
+/*Styling the navigation bar */
+ul {
+  list-style-type: none;
+  padding: 1em;
+  background-color: #adcbe3;
+  overflow: hidden;
+  text-align: center;
+}
+
+li {
+  font-family: "Karla", sans-serif;
+  display: inline;
+  border-right: 2px solid white;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a,
+li button {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1em;
+  font-size: 1.3em;
+}
+
+li a:hover,
+li button:hover {
+  transition: 0.3s ease;
+  background-color: #43D6B9;
+}
+
+.header {
+  text-align: center;
+}
+
+.question {
+  display: flex;
+  margin-top: 2em;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.answer-choice img {
+  height: 15em;
+  width: 15em;
+  object-fit: cover;
+  border-radius: 8%;
+}
+
+.answer-choice {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.answer-choice:hover {
+  opacity: 0.6;
+}
+
+button {
+  font-size: 15px;
+  border: none;
+  background: none;
+}
+
+button:disabled {
+  border: none;
+  opacity: 0.6;
+}
+
+/* gets rid of blue outline when clicking on button */
+button:focus {
+  outline: 0;
+}
+
+/* makes restart icon go to the right side of page */
+.restart {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#restartButton img {
+  width: 100px;
+  height: 100px;
+  padding: 50px;
+}
+
+#restartButton img:hover {
+  opacity: 0.4;
+}
+
+.resultImageContainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+#result {
+  margin-top: 0px;
+  padding-bottom: 0px;
+}
+
+.blog-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.blog-container > div {
+  width: 50%;
+  margin: 10px;
+  text-align: center;
+}
+
+.blog-container img {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.points-style img {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#emailaddress {
+  margin-top: 20px;
+
+  line-height: 60px;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 3px;
+  background: lightblue;
+  border: dotted;
+}
+
+#emailaddress:hover {
+  background: white;
+}
+
+.answer-choice {
+  border-radius: 25px;
+  margin: 4px;
+  padding: 4px;
+  line-height: 5px;
+  font-weight: bold;
+  background-color: lightblue;
+  border: solid;
+}
+#start-question {
+  border-top: 5px solid white;
+}
+
+.result {
+  border-top: 5px solid white;
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pointsbutton {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: Karla, sans-serif;
+  font-size: 22px;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: white;
+  background: #4FD1C5;
+  background: linear-gradient(
+    90deg,
+    rgba(129, 230, 217, 1) 0%,
+    rgba(79, 209, 197, 1) 100%
+  );
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.pointsbutton::before {
+  content: "";
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.pointsbutton:hover,
+.pointsbutton:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.pointsbutton:hover::before,
+.pointsbutton:focus::before {
+  opacity: 1;
+}
+
+.pointsbutton::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.pointsbutton:hover::after,
+.pointsbutton:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}

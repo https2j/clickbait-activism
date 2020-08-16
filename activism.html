@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Activism</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      #save-the-planet,
+      #LGBT,
+      #refugee,
+      #blackLivesMatter {
+        display: none;
+      }
+    </style>
+    <!-- SCRIPTS -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      <img
+        src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2FClickbait_1.gif?v=1597525396043"
+        width="200 px"
+      />
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="activism.html">activism</a></li>
+        <li><a href="game.html">game</a></li>
+        <li><a href="quiz.html">quiz</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="calendar.html">calendar</a></li>
+        <li><a href="fundraising.html">fundraising</a></li>
+        <li><a href="pointredeem.html">points</a></li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          <button class="button" onclick="blm()">
+            black lives matter
+          </button>
+        </li>
+        <li>
+          <button class="button" onclick="saveThePlanet()">
+            save the planet
+          </button>
+        </li>
+        <li>
+          <button class="button" onclick="LGBTQ+rights()">
+            LGBTQ+
+          </button>
+        </li>
+        <li>
+          <button class="button" onclick="refugeeCrisis()">
+            refugees/war crisis
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <br />
+
+    <div id="blackLivesMatter">
+      <div class="row">
+        <div class="column">
+          <article>
+            <h2 class="title">Justice for Breonna Taylor</h2>
+            <h4 class="date">March 13, 2020</h4>
+            <p class="blog-content">
+              Breonna Taylor was an award-winning EMT and model citizen. She
+              loved her family and community, working at two hospitals as an
+              essential worker during the pandemic.
+            </p>
+            <p>
+              Nearly four months ago, a division of the Louisville Police
+              Department performed an illegal, unannounced drug raid on her
+              home. Not a single officer announced themselves before ramming
+              down her door and firing 22 shots, shooting Breonna 8 times,
+              killing her.
+            </p>
+            <a
+              href="https://www.change.org/p/andy-beshear-justice-for-breonna-taylor"
+              >Sign this petition!</a
+            >
+            <img src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2Fbreonna%20taylor.jpg?v=1597587402242" alt="Breonna Taylor" width="100%">
+          </article>
+        </div>
+        <div class="column">
+          <article>
+            <h2 class="title">Black Lives Matter May Be the Largest Movement in U.S. History</h2>
+            <h4 class="date">July 3, 2020</h4>
+            <p class="blog-content">
+              The recent Black Lives Matter protests peaked on June 6, when half a million people turned out in nearly 550 places across the United States. That was a single day in more than a month of protests that still continue to today.
+            </p>
+            <a
+            href="https://www.nytimes.com/interactive/2020/07/03/us/george-floyd-protests-crowd-size.html"
+            >Link to article!</a
+          >
+            <img src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2Fblm.jpg?v=1597510811891" alt="black lives matter protest" width="100%">
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div id="save-the-planet">
+      <div class="row">
+        <div class="column">
+          <article>
+            <h2 class="title">Why We’ll Succeed in Saving the Planet from Climate Change</h2>
+            <h4 class="date">March 25, 2020</h4>
+            <p class="blog-content">
+              Life will be different—and warmer—in 2070. But we will find ways to limit carbon emissions, embrace nature, and thrive.
+            </p>
+            <a
+              href="https://www.nationalgeographic.com/magazine/2020/04/why-we-will-succeed-in-saving-the-planet-from-climate-change-feature/"
+              >Link to article!</a
+            >
+            <img src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2Fclimate%20change.jpg?v=1597588081624" alt="climate change" width="100%">
+          </article>
+        </div>
+        <div class="column">
+          <article>
+            <h2 class="title">WOne Year to Save the Planet: a Simple, Surprising Guide to Fighting the Climate Crisis in 2020</h2>
+            <h4 class="date">January 7, 2020</h4>
+            <p class="blog-content">
+              Life will be different—and warmer—in 2070. But we will find ways to limit carbon emissions, embrace nature, and thrive.
+            </p>
+            <a
+              href="https://www.theguardian.com/environment/2020/jan/07/save-the-planet-guide-fighting-climate-crisis-veganism-flying-earth-emergency-action"
+              >Link to article!</a
+            >
+            <img src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2Fclimate%20strike%20picture.jpg?v=1597588281382" alt="climate strike" width="100%">
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <!--<div id="LGBT">
+      <div class="row">
+        <div class="column">
+
+        </div>
+        <div class="column">
+
+        </div>
+      </div>
+    </div>
+
+    <div id="refugee">
+      <div class="row">
+        <div class="column">
+
+        </div>
+        <div class="column">
+
+        </div>
+      </div>
+    </div>-->
+
+    <button class="pointsbutton" onclick="addPoints()">get points!</button>
+    <br />
+    <br />
+    <br />
+    <p id="points-activism"></p>
+
+    <script>
+      function blm() {
+        var x = document.getElementById("blackLivesMatter");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function saveThePlanet() {
+        var x = document.getElementById("save-the-planet");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      /*function LGBTQ+rights() {
+        var x = document.getElementById("LGBT");
+        if (x.style.display === "none") {
+        x.style.display = "block";
+        } else {
+        x.style.display = "none";
+        }
+      }
+
+        function refugeeCrisis() {
+        var x = document.getElementById("refugee");
+        if (x.style.display === "none") {
+        x.style.display = "block";
+        } else {
+        x.style.display = "none";
+        }
+        } */
+
+      //POINTS BUTTON
+      var points = 0;
+
+      function addPoints() {
+        points++;
+        document.getElementById("points-activism").innerHTML = points;
+        sessionStorage.setItem("pointsActivism", points);
+      }
+    </script>
+  </body>
+</html>

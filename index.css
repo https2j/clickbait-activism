@@ -1,0 +1,325 @@
+/************************************************/
+/************* UNIVERSAL ELEMENTS ***************/
+/************************************************/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Styling the navigation bar */
+ul {
+  list-style-type: none;
+  padding: 1em;
+  background-color: #adcbe3;
+  overflow: hidden;
+  text-align: center;
+}
+
+li {
+  font-family: "Karla", sans-serif;
+  display: inline;
+  border-right: 2px solid white;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a,
+li button {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  padding: 1em;
+  font-size: 1em;
+}
+
+li a:hover,
+li button:hover {
+  transition: 0.3s ease;
+  background-color: #43D6B9;
+}
+body,
+html {
+  height: 100%;
+  font-size: 20px;
+  line-height: 1.5em;
+  box-sizing: border-box;
+  background-color: #e7eff6;
+  font-family: "Montserrat", sans-serif;
+  color: #63ace5;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+
+  background-color: #2a4d69;
+}
+
+h2 {
+  letter-spacing: 3px;
+  font-size: 25px;
+  font-family: "Roboto Mono", sans-serif; /* Change this to your font */
+  color: #4b86b4;
+  text-align: center;
+  line-height: 1.3em;
+  font-weight: bold;
+}
+
+p a {
+  color: #4b86b4;
+}
+/************************************************/
+/************** CSS FOR INDEX.HTML **************/
+/************************************************/
+
+/*-----------TOP IMAGE + TEXT-----------*/
+/* Container for top image and text - Designed for mobile first */
+.main-message {
+  background-image: url("https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2Fbluelivesmatterflag.svg?v=1597508603480");
+
+  min-height: 100%;
+  background-size: auto;
+  background-color: #4b86b4;
+  /*border-style: dotted; /*Uncomment to see the outline of the container*/
+}
+
+/*-----------PARALLAX SCROLL-----------*/
+.main-message,
+.image-one,
+.image-two,
+.image-three,
+.image-four {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #4b86b4;
+  background-size: cover;
+  min-height: 100%; /*Adjust the gap between sections*/
+
+  /*Creates the scrolling effect*/
+  background-attachment: fixed;
+}
+
+/* Flexbox container for title and intro text */
+.flex-container {
+  display: flex; /* Set the flexbox display */
+  flex-direction: row; /* Configure the flex items to row */
+  flex-wrap: nowrap; /* Don’t wrap the flex items */
+  justify-content: center; /* Justify the flex items to the center */
+  align-items: center; /* Align the flex items to the center */
+
+  background-color: #4b86b4;
+
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  padding: 5px;
+  align-items: center;
+  top: 20%;
+  left: 10%;
+  right: 10%;
+}
+
+/* Left box */
+.heading-home {
+  padding: 4%;
+  margin: 2%;
+  text-align: center;
+  color: #2a4d69;
+  font-size: 50px;
+  letter-spacing: 10px;
+  line-height: 60px;
+  /*border-style: dotted; /*Uncomment to see the outline of the container*/
+}
+
+/* Right box */
+.intro-text {
+  padding: 4%;
+  margin: 2%;
+  text-align: center;
+  color: #2a4d69; /* Add the color of your font */
+  background-color: #63ace5; /* Add your own background color */
+  font-size: 20px; /* Add your font size*/
+  letter-spacing: 2px; /* Adds space between letters */
+  line-height: 1.4em; /* Adds space between lines */
+  /*border-style: dotted; /*Uncomment to see the outline of the container*/
+}
+
+/*-----------TEXT SCROLLING SECTIONS-----------*/
+.text-section {
+  background-color: #2a4d69;
+  padding: 20px 45px;
+  margin: 35px;
+  text-align: center;
+}
+
+/*-----------IMAGES-----------*/
+
+.image-one {
+  background-image: url("https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2Fblacklivematterflag.jpg?v=1597516597761");
+}
+
+.image-two {
+  background-image: url("https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2Fblmprotestsisvpic.jpg?v=1597516750434");
+}
+
+.image-three {
+  background-image: url("https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2Fpeaceful%20protest.jpg?v=1597509982410");
+}
+
+.image-four {
+  background-image: url("https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2FScreenshot_20200815_181945.jpg?v=1597512766011");
+}
+
+/* Add more images here for more scrolling! */
+
+/******************************************************/
+/***** CHANGE INDEX.HTML CSS BASED ON SCREEN SIZE *****/
+/******************************************************/
+
+/* IF THE SCREEN IS ~~700 OR LESS~~ IMPLEMENT THESE RULES */
+
+@media only screen and (max-width: 700px) {
+  .main-message,
+  .image-one,
+  .image-two,
+  .image-three,
+  .image-four {
+    background-attachment: scroll;
+  }
+
+  .flex-container {
+    flex-wrap: wrap;
+  }
+}
+
+/* IF THE SCREEN IS ~~701 OR MORE~~ IMPLEMENT THESE RULES */
+
+@media only screen and (min-width: 701px) {
+  .flex-container {
+    flex-wrap: nowrap;
+    left: 25%;
+    right: 25%;
+  }
+}
+
+/* IF THE SCREEN IS ~~1250 OR MORE~~ IMPLEMENT THESE RULES */
+@media only screen and (min-width: 1250px) {
+  h3 {
+    font-size: 35px;
+  }
+
+  .main-message,
+  .image-one,
+  .image-two,
+  .image-three,
+  .image-four {
+    background-attachment: fixed;
+  }
+
+  .main-message {
+    height: 75%;
+  }
+
+  .textSection {
+    margin: 1.5% 15%;
+    font-size: 20px;
+    line-height: 1.5em;
+    /*border-style: dotted;*/ /*Uncomment to see the outline of the container*/
+  }
+}
+
+.wrap {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pointsbutton {
+  min-width: 300px;
+  min-height: 60px;
+  font-family: Karla, sans-serif;
+  font-size: 22px;
+  letter-spacing: 1.3px;
+  font-weight: 700;
+  color: white;
+  background: #4FD1C5;
+  background: linear-gradient(
+    90deg,
+    rgba(129, 230, 217, 1) 0%,
+    rgba(79, 209, 197, 1) 100%
+  );
+  border: none;
+  border-radius: 1000px;
+  box-shadow: 12px 12px 24px rgba(79, 209, 197, 0.64);
+  transition: all 0.3s ease-in-out 0s;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  padding: 10px;
+}
+
+.pointsbutton::before {
+  content: "";
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #00FFCB;
+  box-shadow: 0 0 60px rgba(0, 255, 203, 0.64);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.pointsbutton:hover,
+.pointsbutton:focus {
+  color: #313133;
+  transform: translateY(-6px);
+}
+
+.pointsbutton:hover::before,
+.pointsbutton:focus::before {
+  opacity: 1;
+}
+
+.pointsbutton::after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  border: 6px solid #00FFCB;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.pointsbutton:hover::after,
+.pointsbutton:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 30px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
