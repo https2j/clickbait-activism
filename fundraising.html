@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fundraising</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+
+      /* Create two equal columns that floats next to each other */
+      .column {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 300px; /* Should be removed. Only for demonstration */
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+      #save-the-planet,
+      #LGBT,
+      #refugee,
+      #blackLivesMatter {
+        display: none;
+      }
+    </style>
+    <!-- SCRIPTS -->
+    <script defer src="https://www.gofundme.com/static/js/embed.js"></script>
+    <script src="/fundraising.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      <img
+        src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2FClickbait_1.gif?v=1597525396043"
+        width="200 px"
+      />
+    </h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="activism.html">activism</a></li>
+        <li><a href="game.html">game</a></li>
+        <li><a href="quiz.html">quiz</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="calendar.html">calendar</a></li>
+        <li><a href="fundraising.html">fundraising</a></li>
+        <li><a href="pointredeem.html">points</a></li>
+      </ul>
+    </nav>
+
+    <nav>
+      <ul>
+        <li>
+          <button class="button" onclick="blm()">
+            black lives matter
+          </button>
+        </li>
+        <li>
+          <button class="button" onclick="saveThePlanet()">
+            save the planet
+          </button>
+        </li>
+        <li>
+          <button class="button" onclick="LGBTQ+rights()">
+            LGBTQ+
+          </button>
+        </li>
+        <li>
+          <button class="button" onclick="refugeeCrisis()">
+            refugees/war crisis
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <br />
+
+    <h2 id="title-text">
+      fundraising
+    </h2>
+    <br />
+    <p>
+      click on a cause above for fundraising opportunities!
+    </p>
+    <div id="blackLivesMatter">
+      <div class="row">
+        <div class="column">
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/georgefloyd/widget/large"
+          ></div>
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/9v4q2-justice-for-breonna-taylor/widget/large"
+          ></div>
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/justice-for-regis/widget/large"
+          ></div>
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/elijah-mcclain/widget/large"
+          ></div>
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/blm-frontline-fundminneapolis/widget/large"
+          ></div>
+        </div>
+        <div class="column">
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/i-run-with-maud/widget/large"
+          ></div>
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/destiny-harrison-funeral/widget/large"
+          ></div>
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/eumzn-justice-for-jamee/widget/large"
+          ></div>
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/rip-belly-mujinga/widget/large"
+          ></div>
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/medical-bills-fund-for-little-nikita-blm-seattle/widget/large"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="save-the-planet">
+      <div class="row">
+        <div class="column">
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/seaturtleresearch/widget/large"
+          ></div>
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/turtlestrong-malibu-fire-relief/widget/large"
+          ></div>
+        </div>
+        <div class="column">
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/n6hyu5-mauritius-oil-spill/widget/large"
+          ></div>
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/help-build-koala-ark/widget/large"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <!--<div id="LGBT">
+      <div class="row">
+        <div class="column">
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/-help-iman/widget/large"
+          ></div>
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/colours-youth-network/widget/large"
+          ></div>
+        </div>
+        <div class="column">
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/HOUSETRANSWOMENOFCOLOR/widget/large"
+          ></div>
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/lgbtIN/widget/large"
+          ></div>
+        </div>
+      </div>
+    </div>
+
+    <div id="refugee">
+      <div class="row">
+        <div class="column">
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/beirut-blast-victims-relief-fund/widget/large"
+          ></div>
+        </div>
+        <div class="column">
+          <div
+            class="gfm-embed"
+            data-url="https://www.gofundme.com/f/sakaan-family-beirut-emergency-fund/widget/large"
+          ></div>
+        </div>
+      </div>
+    </div>-->
+
+    <script>
+      function blm() {
+        var x = document.getElementById("blackLivesMatter");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      function saveThePlanet() {
+        var x = document.getElementById("save-the-planet");
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+
+      //function LGBTQ+rights() {
+      //var x = document.getElementById("LGBT");
+      //if (x.style.display === "none") {
+      //x.style.display = "block";
+      //} else {
+      //x.style.display = "none";
+      //}
+      // }
+
+      //function refugeeCrisis() {
+      //var x = document.getElementById("refugee");
+      //if (x.style.display === "none") {
+      //x.style.display = "block";
+      //} else {
+      //x.style.display = "none";
+      //}
+      //}
+    </script>
+  </body>
+</html>

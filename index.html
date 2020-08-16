@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Why All Lives Matter</title>
+    <!-- STYLESHEETS -->
+
+    <link rel="stylesheet" href="/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SCRIPTS -->
+    <script src="/script.js" defer></script>
+  </head>
+
+  <body>
+    <h1>
+      <img
+        src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2FClickbait_1.gif?v=1597525396043"
+        width="200 px"
+      />
+    </h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="activism.html">activism</a></li>
+        <li><a href="game.html">game</a></li>
+        <li><a href="quiz.html">quiz</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="calendar.html">calendar</a></li>
+        <li><a href="fundraising.html">fundraising</a></li>
+        <li><a href="pointredeem.html">points</a></li>
+      </ul>
+    </nav>
+
+    <!------------------------------->
+    <!---------TOP SECTION----------->
+    <!------------------------------->
+    <!--Top section with title and description-->
+    <div class="main-message">
+      <div class="flex-container">
+        <div class="heading-home">
+          Why All Lives Matter
+        </div>
+        <div class="intro-text">
+          The Reason Why the Black Lives Matter Movement is Oppressing Other
+          Racial and Ethinc Groups
+        </div>
+      </div>
+    </div>
+
+    <!------------------------------->
+    <!----------SECTION 1------------>
+    <!------------------------------->
+    <!--Text section-->
+    <div class="text-section">
+      <h2>
+        Do You Believe This?
+      </h2>
+      <p>
+        NEWS FLASH: YOU ARE WRONG.
+        <br />
+        The Black Lives Matter movement is not about oppressing other groups, it
+        is about bringing attention to the injustices that too many people are
+        facing. If someone has been impaled, are you going to complain that
+        you've had a paper cut?
+      </p>
+    </div>
+
+    <!--Image 1-->
+    <div class="image-one"></div>
+
+    <!------------------------------->
+    <!----------SECTION 2------------>
+    <!------------------------------->
+    <!--Text section-->
+    <div class="text-section">
+      <h2>
+        "The idea is not to have a safe police state. The idea is to have a safe
+        democratic society."
+        <br />
+        ~ Professor Daniel Nagin
+      </h2>
+    </div>
+
+    <!--Image 2-->
+    <div class="image-two"></div>
+
+    <!------------------------------->
+    <!----------SECTION 3------------>
+    <!------------------------------->
+    <!--Text section-->
+    <div class="text-section">
+      <h2>
+        Most people don't have to worry about getting killed or injured in their
+        everyday lives. Do you?
+      </h2>
+      <p>
+        People of color have to constantly deal with the insecurites of systemic
+        racism in today's society.
+      </p>
+    </div>
+
+    <!--Image 3-->
+    <div class="image-three"></div>
+
+    <!------------------------------->
+    <!----------SECTION 4------------>
+    <!------------------------------->
+    <!--Text section-->
+    <div class="text-section">
+      <h2>
+        On average, black trans women don't make past the age of 35.
+      </h2>
+      <p>
+        THIS IS UNACCEPTABLE.
+        <br />
+
+        The Preamble States: "We the People."
+        <br />
+        ‣ this means everyone - white, black, asian, hispanic, and so many
+        others!
+      </p>
+    </div>
+
+    <!--Image 4-->
+    <div class="image-four"></div>
+
+    <!------------------------------->
+    <!---------BOTTOM TEXT----------->
+    <!------------------------------->
+    <!--Text section only-->
+    <div class="text-section">
+      <h2>
+        Now more than ever we need to make our government take action.
+      </h2>
+      <h2>
+        If we stand together, we can make a difference.
+      </h2>
+    </div>
+    <button class="pointsbutton" onclick="addPoints()">get points!</button>
+    <br />
+    <br />
+    <br />
+    <p id="points-index"></p>
+    <script>
+      //POINTS BUTTON
+      var points = 0;
+
+      function addPoints() {
+        points++;
+        document.getElementById("points-index").innerHTML = points;
+        sessionStorage.setItem("pointsIndex", points);
+      }
+    </script>
+  </body>
+</html>

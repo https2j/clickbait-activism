@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+
+    <title>Game</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SCRIPTS -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      <img
+        src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2FClickbait_1.gif?v=1597525396043"
+        width="200 px"
+      />
+    </h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="activism.html">activism</a></li>
+        <li><a href="game.html">game</a></li>
+        <li><a href="quiz.html">quiz</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="calendar.html">calendar</a></li>
+        <li><a href="fundraising.html">fundraising</a></li>
+        <li><a href="pointredeem.html">points</a></li>
+      </ul>
+    </nav>
+    <br />
+    <h2 id="title-text">
+      games
+    </h2>
+    <br />
+    <h3>
+      Game 2
+    </h3>
+    <p>
+      Use the arrow keys and try to hit as many black lines as possible!
+    </p>
+    <button class="pointsbutton" onclick="addPoints()">get points!</button>
+    <br />
+    <br />
+    <br />
+    <p id="points-game2"></p>
+    <script>
+      var position;
+
+      function setup() {
+        createCanvas(800, 500);
+        background(200);
+        position = 0;
+      }
+
+      function draw() {
+        background(0, 183, 255);
+        noStroke();
+        fill(110, 73, 18);
+        rect(0, 250, width, 250);
+        //rect(x top L, y top L, width, height)
+        fill(0);
+        rect(0, 300, width, 150);
+
+        stroke(255, 255, 255);
+        strokeWeight(5);
+        line(0, 375, 50, 375);
+        //line(x1, y1, x2, y2)
+        line(100, 375, 150, 375);
+        line(200, 375, 250, 375);
+        line(300, 375, 350, 375);
+        line(400, 375, 450, 375);
+        line(500, 375, 550, 375);
+        line(600, 375, 650, 375);
+        line(700, 375, 750, 375);
+        line(800, 375, 850, 375);
+
+        strokeWeight(2);
+        stroke(255);
+        fill(255, 0, 0);
+
+        rect(110 + position, 285, 80, 50);
+
+        fill(222, 255, 8);
+        circle(110 + position, 340, 15);
+        ellipse(190 + position, 340, 30, 30);
+        //ellipse(x center, y center, diameter)
+        //rect(x top L, y top L, width, height)
+
+        if (keyIsPressed && keyCode == LEFT_ARROW) position--;
+        if (keyIsPressed && keyCode == RIGHT_ARROW) position++;
+
+        //position=position+1;
+        //position+=1;
+
+        fill(255);
+        ellipse(100 - position, 60, 50);
+        ellipse(140 - position, 40, 50, 50);
+        ellipse(170 - position, 70, 50, 50);
+        ellipse(130 - position, 80, 50, 50);
+
+        ellipse(400 - position, 160, 50);
+        ellipse(440 - position, 140, 50, 50);
+        ellipse(470 - position, 170, 50, 50);
+        ellipse(430 - position, 180, 50, 50);
+      }
+    </script>
+  </body>
+</html>

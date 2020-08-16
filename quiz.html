@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quiz</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/quiz-style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        text-align: center;
+      }
+    </style>
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      <img
+        src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2FClickbait_1.gif?v=1597525396043"
+        width="200 px"
+        height="200px"
+      />
+    </h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="activism.html">activism</a></li>
+        <li><a href="game.html">game</a></li>
+        <li><a href="quiz.html">quiz</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="calendar.html">calendar</a></li>
+        <li><a href="fundraising.html">fundraising</a></li>
+        <li><a href="pointredeem.html">points</a></li>
+      </ul>
+    </nav>
+
+    <br />
+    <h2 id="title-text">
+      quiz
+    </h2>
+    <br />
+
+    <h2>QUESTION ONE</h2>
+    <h3>What recently happened in Beruit, Lebanon?</h3>
+    <div class="question">
+      <div class="answer-choice">
+        <br />
+        <button id="q1a1">The city has been overrun by wildfires.</button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q1a2">
+          There are revolts against an oppressive government happening.
+        </button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q1a3">
+          There have been massive explosions that have destroyed a good amount
+          of the city.
+        </button>
+      </div>
+    </div>
+    <br />
+    <h2>QUESTION TWO</h2>
+    <h3>What is Black Lives Matter advocating for/against?</h3>
+    <div class="question">
+      <div class="answer-choice">
+        <br />
+        <button id="q2a1">
+          BLM is advocating for the end of police brutality and racially
+          motivated violence againts Black people.
+        </button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q2a2">
+          BLM is advocating for the complete eradication of all police forces
+          and prisons.
+        </button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q2a3">
+          BLM is advocating for all black police officers to be paid more.
+        </button>
+      </div>
+    </div>
+    <br />
+    <h2>QUESTION THREE</h2>
+    <h3>What is the Uighur humanitarian crisis in China?</h3>
+    <div class="question">
+      <div class="answer-choice">
+        <br />
+        <button id="q3a1">
+          Uighur Muslims are being forced out of China and aren't being let back
+          in.
+        </button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q3a2">
+          Uighur Muslims have been thrown into concentration camps and
+          brainwashed and forced to undergo many horrific treatments.
+        </button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q3a3">
+          Uighur Muslims are being denied citizenship and access to many things
+          they should be allowed to access.
+        </button>
+      </div>
+    </div>
+
+    <br />
+    <h2>QUESTION FOUR</h2>
+    <h3>Which one of these is true?</h3>
+    <div class="question">
+      <div class="answer-choice">
+        <br />
+        <button id="q4a1">
+          Masks don't help stop the coronavirus from spreading.
+        </button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q4a2">
+          All police officers aren't bad, so we don't need to change the system;
+          it's just a few bad officers.
+        </button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q4a3">
+          Climate change isn't a real problem with our planet and is a hoax.
+        </button>
+      </div>
+      <div class="answer-choice">
+        <br />
+        <button id="q4a4">
+          All lives do matter, but right now BLM is trying to say that Black
+          lives matter just as much as other lives and deserve to be treated as
+          such.
+        </button>
+      </div>
+    </div>
+
+    <br />
+    <div class="result">
+      <h2>
+        Your result is...
+      </h2>
+      <h2 id="result"></h2>
+    </div>
+
+    <div class="resultImageContainer">
+      <h2 id="resultImage"></h2>
+    </div>
+
+    <div class="restart">
+      <button id="restartButton">
+        <img
+          src="https://cdn.glitch.com/f5adcac0-ea77-4ac5-9df8-bd18b335f298%2Frestart%20new.png?v=1597330435132"
+          alt="The restart button"
+        />
+      </button>
+    </div>
+    <button class="pointsbutton" onclick="addPoints()">get points!</button>
+    <br />
+    <br />
+    <br />
+    <p id="points-quiz"></p>
+
+    <script>
+      //POINTS BUTTON
+      var points = 0;
+
+      function addPoints() {
+        points++;
+        document.getElementById("points-quiz").innerHTML = points;
+        sessionStorage.setItem("pointsQuiz", points);
+      }
+    </script>
+  </body>
+</html>

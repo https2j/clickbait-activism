@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+
+    <title>Game</title>
+    <!-- STYLESHEETS -->
+    <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SCRIPTS -->
+    <script src="/script.js" defer></script>
+    <script src = "gameScript.js" defer></script>
+  </head>
+  <body>
+    <h1>
+      <img
+        src="https://cdn.glitch.com/d232b9a5-276b-4ce2-b3aa-ee508f7d6535%2FClickbait_1.gif?v=1597525396043"
+        width="200 px"
+      />
+    </h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">home</a></li>
+        <li><a href="activism.html">activism</a></li>
+        <li><a href="game.html">game</a></li>
+        <li><a href="quiz.html">quiz</a></li>
+        <li><a href="gallery.html">gallery</a></li>
+        <li><a href="calendar.html">calendar</a></li>
+        <li><a href="fundraising.html">fundraising</a></li>
+        <li><a href = "pointredeem.html">points</a></li>
+      </ul>
+    </nav>
+    <br />
+    <h2 id="title-text">
+      games
+    </h2>
+    <br />
+    <h3>
+      Game 1
+    </h3>
+    <p>
+      Use the arrow keys and try to hit as many black lines as possible!
+    </p>
+   <!-- <a href = "game2.html">go to game 2</a>
+    <br />
+        <button class="pointsbutton" onclick="addPoints()">get points!</button>
+    <br>
+--->
+    <br>
+    <br>
+    <p id="points-game"></p>
+    <script>
+    //POINTS BUTTON
+        var points = 0;
+
+        function addPoints() {
+          points ++;
+          document.getElementById("points-game").innerHTML = points;
+          sessionStorage.setItem("pointsGame", points);
+        }
+    </script>
+  </body>
+</html>
